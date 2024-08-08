@@ -91,7 +91,7 @@ def data_for_op(op,out_file,old_file):
     return data
 
 def dump_part(part):
-    if part.partition_name not in ['boot', 'vbmeta', 'recovery']:
+    if part.partition_name not in ['init_boot', 'boot', 'vbmeta', 'recovery']:
         return
 
     sys.stdout.write("Processing %s partition" % part.partition_name)
